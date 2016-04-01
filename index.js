@@ -5,4 +5,4 @@ app.get("/",function(request, response) {
   response.end("Yay! The app works!");
 });
 
-app.listen(3000);
+app.listen(process.env.PORT||3000);
