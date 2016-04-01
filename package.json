@@ -1,0 +1,25 @@
+{
+  "name": "timestamp",
+  "version": "1.0.0",
+  "description": "Timestamp api for freecodecamp project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arpit-saxena/timestamp.git"
+  },
+  "author": "Arpit Saxena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arpit-saxena/timestamp/issues"
+  },
+  "homepage": "https://github.com/arpit-saxena/timestamp#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "engines": {
+    "node": "5.9.1"
+  },
+}
