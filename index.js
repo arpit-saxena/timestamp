@@ -1,3 +1,7 @@
+function isNumeric(num) {
+  return isFinite(num);
+}
+
 var express = require('express');
 var app = express();
 
@@ -7,7 +11,7 @@ app.use("/", function(req, res) {
   req.setEncoding('utf8');
   var param = req.path.substr(1);
   var date_string, unix;
-  if(isNaN(param)){
+  if(!isNumeric(param)){
     date_string = decodeURIComponent(param);
     var date = new Date(date_string);
     var unix = Date.UTC(date.getFullYear(),date.getMonth(),date.getDate())/1000;
